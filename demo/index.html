@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/USA Semester 2010 120.JPG"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Good luck and enjoy your life!</h3>
+          <h5 class="light grey-text text-lighten-3">Anders Isberg</h5>
+          <h5 class="light grey-text text-lighten-3">Colleagues at Sony, Teleca, AU-System</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/USA Semester 2010 558.JPG"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>It was a joyride to work with you!</h3>
+          <h5 class="light grey-text text-lighten-3">Kurt Olsson</h5>
+          <h5 class="light grey-text text-lighten-3">Colleagues at AU-System</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/USA Semester 2010 120.JPG"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>There are 10 types of people, those who understand binary and those who don't</h3>
+          <h5 class="light grey-text text-lighten-3">Astrid Lindgren</h5>
+          <h5 class="light grey-text text-lighten-3">Colleagues at Sony</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/USA Semester 2010 558.JPG"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Nothing is impossible. Impossible just takes a bit longer. Best wishes</h3>
+          <h5 class="light grey-text text-lighten-3">Donald Trump</h5>
+          <h5 class="light grey-text text-lighten-3">Colleagues at Teleca</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+<script type="text/javascript">
+      $(document).ready(function(){
+          $('.slider').slider({height: 500, interval: 6000});
+      });
+
+      $("img").click(() => {
+        $('.slider').slider('next');
+      });
+
+</script>
+</html>
