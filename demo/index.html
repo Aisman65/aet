@@ -17,9 +17,9 @@
       <li>
       	<amp-img src="img/USA Semester 2010 120.JPG"  width="1" height="0.7"  layout="responsive"></amp-img>
         <div class="caption center-align">
-          <h3>Good luck and enjoy your life!</h3>
-          <h5 class="light grey-text text-lighten-3">Anders Isberg</h5>
-          <h5 class="light grey-text text-lighten-3">Colleagues at Sony, Teleca, AU-System</h5>
+          <p>Good luck and enjoy your life!</p>
+          <p class="light grey-text text-lighten-3">Anders Isberg</h5>
+          <p class="light grey-text text-lighten-3">Colleagues at Sony, Teleca, AU-System</h5>
         </div>
       </li>
       <li>
@@ -52,6 +52,10 @@
 <script type="text/javascript">
       $(document).ready(function(){
           $('.slider').slider({indicators: false, height: innerHeight, interval: 10000});
+      });
+      
+      $(window).resize(function () { 
+        $('.slider').slider({indicators: false, height: innerHeight, interval: 10000});
       });
 
       $("img").click(() => {
