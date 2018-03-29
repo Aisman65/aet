@@ -50,14 +50,16 @@
   </div>
 </body>
 <script type="text/javascript">
+	  let curW = innerHeight;
       $(document).ready(function(){
           $('.slider').slider({indicators: false, height: innerHeight, interval: 10000});
       });
       
-      $(window).resize(function () { 
+      window.addEventListener("orientationchange", function() {
+        // Announce the new orientation number
         $('.slider').slider({indicators: false, height: innerHeight, interval: 10000});
-      });
-
+      }, false);
+      
       $("img").click(() => {
         $('.slider').slider('next');
       });
