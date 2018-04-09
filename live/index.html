@@ -22,33 +22,57 @@
   document.getElementsByTagName('head')[0].appendChild(link);
 </script>
 <style>
+
+ .reveal > .slides > .center  {
+   vertical-align: middle;
+ }
+
+ .reveal > .slides > .top  {
+   top: 0px;
+ }
+
+ .reveal > .slides > .bottom  {
+   bottom: 0px;
+ }
+ .reveal > .slides > .right  {
+   text-align: right;
+ }
+
+ .reveal > .slides > .left  {
+   text-align: left;
+ }
+
+ .reveal > .slides > section > blockquote,
+ .reveal > .slides > section > p {
+   width: 100%;
+ }
+ 
 </style>
 </head>
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-background-color="lightgrey">
-				<img data-src="img/retired1.png" style="border: none; background: none;box-shadow: none;"></img>
+			<section class="center" data-background-color="lightgrey">
+				<img data-src="img/retired1.png" style="width: 40%; border: none; background: none;box-shadow: none;"></img>
 			</section>		
-			<section data-background-image="img/KlasH.JPG" data-background-size="100%"}>
+			<section class="right top" data-background-image="img/KlasH.JPG" data-background-size="100%"}>
 				<blockquote>&ldquo;Thank you for being an awesome
 					developer and inspiration, keep rockin'!&rdquo;</blockquote>
 				<p>Klas Hermodsson</p>
 				<p>Colleagues at Teleca, Obigo, Sony Mobile</p>
 			</section>
-			<section data-background-image="img/Claes.jpg" data-background-size="100%">
-				<blockquote>&ldquo;Really nice to work with you Anders!
-					Enjoy your new free life!&rdquo;</blockquote>
+			<section class="bottom" data-background-image="img/Claes.jpg" data-background-size="100%">
+				<blockquote>&ldquo;Really nice to work with you Anders!<br>Enjoy your new free life!&rdquo;</blockquote>
 				<p>Claes Nilsson</p>
 				<p>Colleagues at Sony, Teleca, AU-System</p>
 			</section>
-			<section data-background-image="img/andreas_sandblad.jpg"  data-background-size="100%">
+			<section class="top right" data-background-image="img/andreas_sandblad.jpg"  data-background-size="100%">
 				<blockquote>&ldquo;I remember the old days with the
 					Obigo Browser and Webkit. Nice working with you!&rdquo;</blockquote>
 				<p>Andreas Sandblad</p>
 				<p>Colleagues at Sony and Obigo</p>
 			</section>
-			<section data-background-image="img/Kent3.jpg" data-background-size="100%">
+			<section class="bottom" data-background-image="img/Kent3.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Det var en ära att få jobba så nära
 					dig under många år, ledsen för all dålig kod du fick granska :-).
 					Det var grymt kul och inte minst lärorikt att jobba med dig! Om du
@@ -56,98 +80,91 @@
 				<p>Kent Olsson</p>
 				<p>Colleagues at Sony, Obigo, AU-system</p>
 			</section>
-			<section data-background-image="img/Demo_collage_2_12.png" data-background-size="100%">
+			<section class="bottom" data-background-image="img/Demo_collage_2_12.png" data-background-size="100%">
 				<blockquote>&ldquo;Tack för all tid tillsammans och all
 					hjälp!&rdquo;</blockquote>
 				<p>Magnus Hallqvist</p>
 				<p>Colleagues at Sony Mobile</p>
 			</section>
-			<section data-background-image="img/modelljarnvag.jpg" data-background-size="100%">
+			<section class="bottom" data-background-image="img/modelljarnvag.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Ett stort lycka till med en oändlig
 					fritid, dags att damma av märklinjärnvägen. Det har varit ett nöje
 					att njuta av din kompetens.&rdquo;</blockquote>
 				<p>Mattias Nilsson</p>
 				<p>Browsing - Sony Mobile</p>
 			</section>
-			<section data-background-image="img/jagare.JPG" data-background-size="100%">
-				<blockquote>&ldquo;Tack för den här tiden! Allt gott
-					framöver!&rdquo;</blockquote>
-				<p>Lars Jägare</p>
-				<p>Colleagues at Sony Mobile</p>
+			<section class="bottom left" data-background-image="img/jagare.JPG" data-background-size="100%" style="color: black">
+				<blockquote>&ldquo;Tack för den här tiden! <br>Allt gott framöver!&rdquo;</blockquote>
+				<p>Lars Jägare colleagues at Sony</p>
 			</section>
 
-			<section data-background-image="img/ais.jpg" data-background-size="100%">
+			<section class="top right" data-background-image="img/ais.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Thanks for all knowledge & inspiration, it has been a true joyride to work
 					with you! Wish you all the Best!&rdquo;</blockquote>
 				<p>Anders Isberg</p>
-				<p>Colleagues at Sony, Teleca, Obigo, AU-system</p>
+				<p>Colleagues at Sony,<br>Teleca, Obigo, AU-system</p>
 			</section>
-			<section data-background-image="img/mathias.JPG" style="color: coral" data-background-size="100%">
-				<blockquote>&ldquo;Det har varit kul att jobba
+			<section class="bottom left" data-background-image="img/mathias.JPG" style="color: coral" data-background-size="100%">
+				<blockquote>&ldquo;Det har varit kul att jobba<br>
 					tillsammans med dig! Lycka till!&rdquo;</blockquote>
 				<p>Mathias Franzén</p>
 				<p>Colleagues at Sony</p>
 			</section>
-			<section data-background-image="img/Riosockertoppen.jpg" data-background-size="100%">
+			<section class="bottom" data-background-image="img/Riosockertoppen.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Glad I met you! Enjoy!&rdquo;</blockquote>
 				<p>Göran Svennarp</p>
 				<p>Colleagues at Sony, Teleca and AU-System</p>
 			</section>
-			<section data-background-image="img/NiclasKellgren.jpg" data-background-size="100%">
-				<blockquote>&ldquo;I had the great fortune of starting
-					my career in your team. You showed us what excellence is and you
-					have been my role model ever since.&rdquo;</blockquote>
+			<section class="bottom right" data-background-image="img/NiclasKellgren.jpg" data-background-size="100%">
+				<blockquote>&ldquo;I had the great fortune of starting my career<br> 
+								   in your team. You showed us what excellence<br>is and you
+								   have been my role model ever since.&rdquo;</blockquote>
 				<p>Niclas Kellgren</p>
 				<p>Colleagues at AU System, Obigo, Teleca and Sony</p>
 			</section>
-			<section data-background-image="img/IMG_20170605_105914_147.jpg" data-background-size="100%">
+			<section class="bottom" data-background-image="img/IMG_20170605_105914_147.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Tack för gott samarbete och många
 					lärorika diskussioner!&rdquo;</blockquote>
 				<p>Henrik Sundström</p>
 				<p>Colleagues at Sony Ericsson and Sony Mobile</p>
 			</section>
-			<section data-background-image="img/fredrikf.jpg" data-background-size="100%">
+			<section class="bottom" data-background-image="img/fredrikf.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Ytterst tacksam för att jag fick
 					äran att vara din kollega, Anders. Lärt mig massor, även om jag
-					inte alltid förstod allt direkt ;-) . Njut av livet och hoppas vi
+					inte alltid förstod allt direkt ;-). Njut av livet och hoppas vi
 					springer på varandra på Österlen i sommar!&rdquo;</blockquote>
-				<p>Fredrik Fiedler</p>
-				<p>Colleagues at Sony Mobile</p>
+				<p>Fredrik Fiedler, Colleagues at Sony Mobile</p>
 			</section>
-			<section data-background-image="img/DSC_2038.JPG"
-				style="color: coral" data-background-size="100%">
-				<blockquote>&ldquo;Very happy that I got the
-					opportunity to work with you. All the best!&rdquo;</blockquote>
+			<section class="top right" data-background-image="img/DSC_2038.JPG"
+				style="color: black" data-background-size="100%">
+				<blockquote>&ldquo;Very happy that I got the opportunity<br> to work with you. All the best!&rdquo;</blockquote>
 				<p>Tomas Elofsson</p>
-				<p>Colleagues at Sony, Obigo, Teleca, AU-System</p>
+				<p>Colleagues at Sony,<br>Obigo, Teleca, AU-System</p>
 			</section>
-			<section data-background-image="img/andersf.JPG" data-background-size="100%">
-				<blockquote>&ldquo;Mr. Browser, what would we had done
-					without you?&rdquo;</blockquote>
-				<p>Anders Fredlund</p>
-				<p>Colleagues at SonyEricsson, SonyMobile and R&I ;)</p>
+			<section class="bottom left" data-background-image="img/andersf.JPG" data-background-size="100%">
+				<blockquote>&ldquo;Mr. Browser, what would we had done without you?&rdquo;</blockquote>
+				<p>Anders Fredlund, Colleagues at Sony and R&I ;)</p>
 			</section>
-			<section data-background-image="img/JohanWedjesjo.JPG"
-				style="color: coral" data-background-size="100%">
+			<section class="bottom" data-background-image="img/JohanWedjesjo.JPG"
+				style="color: black" data-background-size="100%">
 				<blockquote>&ldquo;Thanks for your Excellent mentorship
 					and Inspiration! Wish you a sunny future!&rdquo;</blockquote>
 				<p>Johan Wedjesjö</p>
 				<p>Colleagues at AU-System, Teleca, Obigo</p>
 			</section>
-			<section data-background-image="img/MagnusS.jpg" data-background-size="100%">
+			<section class="bottom" data-background-image="img/MagnusS.jpg" data-background-size="100%">
 				<blockquote>&ldquo;Tack för denna tiden och ett stort
 					lycka till i framtiden! Har varit fantastiskt roligt att få arbeta
 					tillsammans med dig! &rdquo;</blockquote>
-				<p>Magnus Svensson</p>
-				<p>Kollega från Sony</p>
+				<p>Magnus Svensson, Kollega från Sony</p>
 			</section>
-			<section data-background-image="img/DSC_0947.JPG " data-background-size="100%">
+			<section class="center"data-background-image="img/DSC_0947.JPG " data-background-size="100%">
 				<blockquote>&ldquo;As you know, when you think you are
 					80% done there are 80% left. Good luck, have fun!&rdquo;</blockquote>
 				<p>Erik Günther</p>
 				<p>Colleagues at Sony Mobile</p>
 			</section>
-			<section data-background-image="img/patrik_happy_happy.JPG" data-background-size="100%">
+			<section class="bottom" data-background-image="img/patrik_happy_happy.JPG" data-background-size="100%">
 				<blockquote>&ldquo;"The Rock" är ju upptaget, så du får
 					väl vara "The Klippa" då då. Sant nöje att få ta del av all kunskap
 					och anekdoter. Ge nu Gyllebos mördarsniglar vad dom
@@ -155,63 +172,60 @@
 				<p>Patrik Stenkilsson</p>
 				<p>Colleagues at Sony Mobile</p>
 			</section>
-			<section data-background-image="img/Petter_Island.JPG" data-background-size="100%">
+			<section class="bottom" data-background-image="img/Petter_Island.JPG" data-background-size="100%">
 				<blockquote>&ldquo;Det var ett nöje och otroligt
 					lärorikt att arbeta med dig. Lycka till framöver!&rdquo;</blockquote>
 				<p>Petter Wallin</p>
 				<p>Colleagues at Sony, Teleca and AU-System</p>
 			</section>		
-			<section data-background-image="img/caipeinha.JPG" data-background-size="100%">				
+			<section class="bottom" data-background-image="img/caipeinha.JPG" data-background-size="100%" style="color: black">				
 				<blockquote>&ldquo;Grymt att få jobba med dig! Checka ut, relaxxa och njut! &rdquo;</blockquote>
 				<p>Andrej Petef</p>
 				<p>Colleagues at Sony </p>
 			</section>
-			<section data-background-image="img/lg.jpg" data-background-size="100%">				
-				<blockquote>&ldquo;Det har varit riktigt stimulerande och lärorikt att jobba tillsammans med dig Anders. Tänk så många mobila webbläsare vi hunnit med genom åren. Önskar dig all lycka framöver!&rdquo;</blockquote>
-				<p>Lars-Gunnar Lundgren</p>
-				<p>Colleagues at Sony, Obigo, Teleca and AU-system</p>
+			<section class="bottom" data-background-image="img/lg.jpg" data-background-size="100%" style="color: black">				
+				<blockquote>&ldquo;Det har varit riktigt stimulerande och lärorikt att jobba tillsammans med dig. Tänk så många mobila webbläsare vi hunnit med genom åren. Önskar dig all lycka framöver!&rdquo;</blockquote>
+				<p>Lars-Gunnar Lundgren, Colleagues at Sony, Obigo, Teleca and AU-system</p>
 			</section>
-			<section data-background-image="img/johan_almbladh.jpg" data-background-size="100%">				
-				<blockquote>&ldquo;Det har varit ett nöje att få ha dig som kollega och mentor. Lycka till!&rdquo;</blockquote>
+			<section class="bottom left" data-background-image="img/johan_almbladh.jpg" data-background-size="100%">				
+				<blockquote>&ldquo;Det har varit ett nöje att få ha dig som <br>kollega och mentor. Lycka till!&rdquo;</blockquote>
 				<p>Johan Almbladh</p>
 				<p>Colleagues at Obigo</p>
 			</section>					
-			<section data-background-image="img/fa_image.jpg" data-background-size="100%">				
+			<section class="bottom" data-background-image="img/fa_image.jpg" data-background-size="100%">				
 				<blockquote>&ldquo;Det var verkligen mycket inspirerande, lärorikt och kul att jobba med dig, och tack för alla de gånger som du kodade mig ur trubbel :-) Stort lycka till framöver Anders!&rdquo;</blockquote>
-				<p>Fredrik Ademar</p>
-				<p>Colleagues at Sony, Obigo, AU-System</p>
+				<p>Fredrik Ademar, Colleagues at Sony, Obigo, AU-System</p>
 			</section>
-			<section data-background-image="img/Jens_20180408_153805.jpg" data-background-size="100%">				
+			<section class="bottom right" data-background-image="img/Jens_20180408_153805.jpg" data-background-size="100%">				
 				<blockquote>&ldquo;As a student at Lund University and as a colleague at AU-System, I learned a lot thanks to your excellent teaching skills and thorough knowledge. All the best!&rdquo;</blockquote>
 				<p>Jens Pommer</p>
 				<p>Colleagues at AU-System</p>
 			</section>			
 			
-			<section data-background-image="img/jakob.jpg" data-background-size="100%">				
-				<blockquote>&ldquo;Hej Anders! Du gjorde åren på Obigo till en fantastiskt lärorik period!  Jag minns fortfarande genomgången av Boyer-Moore som om det var igår! Fortsatt lycka till!&rdquo;</blockquote>
+			<section class="top right" data-background-image="img/jakob.jpg" data-background-size="100%">				
+				<blockquote>&ldquo;
+				Du gjorde åren på Obigo till en fantastiskt lärorik period! Jag minns fortfarande genomgången av Boyer-Moore som om det var igår! Fortsatt lycka till!&rdquo;</blockquote>
 				<p>Jakob Melander</p>
 				<p>Kollegor på Obigo</p>
-			</section>
-			
-			<section data-background-image="img/mfalk.jpg" data-background-size="100%">				
+			</section>			
+			<section class="bottom" data-background-image="img/mfalk.jpg" data-background-size="100%">				
 				<blockquote>&ldquo;Tusen tack för åren jag fick nöjet att arbeta tillsammans med dig. Det var ett sant nöje att ta del av dina kunskaper och ditt sällskap. &rdquo;</blockquote>
 				<p>Mattias Falk</p>
 				<p>Colleagues at Sony</p>
 			</section>			
-			<section data-background-image="img/jonasg.png" data-background-size="100%">				
+			<section class="bottom" data-background-image="img/jonasg.png" data-background-size="100%">				
 				<blockquote>&ldquo;Great working with you!! Best wishes but most of all have fun&rdquo;</blockquote>
 				<p>Jonas Gustavsson</p>
 				<p>Colleagues at Sony</p>
 			</section>
-			<section data-background-image="img/sketch-1523221460290.png" data-background-size="100%">				
+			<section class="bottom" data-background-image="img/sketch-1523221460290.png" data-background-size="100%">				
 				<blockquote>&ldquo;It was a joy & honour to work with you! Best wishes&rdquo;</blockquote>
 				<p>Martin Ahlgren</p>
 				<p>Colleagues at Sony, Teleca, AU-System</p>
 			</section>
-			<section data-background-image="img/hilding.jpg" data-background-size="100%">				
+			<section class="bottom" data-background-image="img/hilding.jpg" data-background-size="100%" style="color: coral;">				
 				<blockquote>&ldquo;It was a true pleasure to get the chance to work with you Anders! You are one of a kind! Best wishes&rdquo;</blockquote>
-				<p>Magnus Hilding</p>
-				<p>Colleagues at Sony, Teleca, AU-System</p>
+				<p>Magnus Hilding, Colleagues at Sony, Teleca, AU-System</p>
 			</section>
 		</div>
 	</div>
@@ -227,8 +241,8 @@
       transition: "concave",
       backgroundTransition: "concave",
       transitionSpeed: 'slow', // default/fast/slow    	
-      hideAddressBar: true,
       autoSlide: 12000,
+      center: false,
       loop: true,
       dependencies : [ {
         src : 'plugin/markdown/marked.js'
